@@ -6,13 +6,14 @@ using UnityStandardAssets.CrossPlatformInput;
 public class TrumpController : MonoBehaviour {
 
     // Use this for initialization
-    private Rigidbody rb;
-    private Animation anim; 
+    public Rigidbody rb;
+    private Animation anim;
+    public Rigidbody rbForJump;
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animation>();
-
+        rbForJump = rb;
 	}
 	
 	// Update is called once per frame
